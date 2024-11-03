@@ -1,0 +1,253 @@
+@import url();
+*{
+    font-family:'Ara Alm Bon';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body {
+    direction: rtl;
+    text-align: right;
+    background-image: url(img/5303586.jpg);
+}
+header {
+   
+    background-image: url(img/header\ &\ footer.jpg);
+    width: 100%;
+    padding: 0;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+ align-items: center;
+ padding: 10px 200px;
+ 
+}
+
+.logo{
+text-decoration: none;
+color:bisque;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.7em;
+letter-spacing: 2px;
+
+}
+
+.navigation a{
+    color:bisque;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color:darkgoldenrod;
+} 
+
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/working-bee-filling-honey-combs.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+}
+.social-icon a{
+    font-size: 1.7em;
+    padding: 30px;
+    color:rgb(50, 30, 6);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثيرات ديناميكية */
+
+}
+
+.social-icon a:hover{
+    color:rgb(186, 108, 13); 
+    transform: scale(1.05);
+}
+
+.main h2 {
+color:rgb(186, 108, 13);
+font-size: 1.8em;
+font-weight: 500;
+text-align: right;
+
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(58, 33, 3);
+    font-size: 2em;
+    font-weight: 600;
+    text-align: right;
+    margin-left: 500;
+
+}
+
+.main h3{
+    color:rgb(186, 108, 13);
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+
+.main-btn {
+    text-align: center;
+    color: bisque;
+    background-color: rgb(60, 32, 5);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin: 10px auto; /* مركز الزر */
+    padding: 10px 30px; /* تعديل الحشو */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثيرات ديناميكية */
+    margin-bottom: 40px;
+}
+
+.main-btn:hover {
+    background-color: rgb(80, 42, 10); /* تغيير لون الخلفية عند التمرير */
+    transform: scale(1.05); /* تكبير الزر قليلاً عند التمرير */
+}
+
+.store{
+padding-top: 40px;
+padding-bottom: 40px;
+    background-image: url(img/5361107.jpg);
+}
+
+.products{
+
+display: flex;
+justify-content:center ;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.product{
+background-color: rgba(240, 231, 141, 0.141);
+border: 2px solid rgb(80, 42, 10);
+min-height: 20em;
+width: 15em;
+overflow: hidden;
+border-radius: 10px;
+margin: 20px;
+transition: 0.7s ease;
+
+
+}
+
+.product:hover{
+transform: scale(1.1);
+}
+
+.product:hover .prd-img{
+    opacity: 0.9;
+}
+.prd-img img{
+    width: 100%;
+}
+
+.prd-description{
+    padding: 1em;
+ 
+}
+.description{
+    font-size: 0.9em;
+    color: rgb(50, 30, 6);
+    text-align: justify;
+}
+
+.prd-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+.more {
+
+    text-decoration: none;
+    color:rgb(97, 89, 1);
+}
+   
+.more:hover{
+    color:rgb(50, 30, 6);
+}
+
+
+.footer{
+    background-image: url(img/header\ &\ footer.jpg);
+    color:bisque;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: darkgoldenrod;
+}
+
+.footer .social-icon a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    color: bisque;
+}
+
+.cart-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quantity-input:focus {
+    border-color: goldenrod;
+    box-shadow: 0 0 5px goldenrod;
+}
+
+.add-to-cart {
+    background-color: darkgoldenrod;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(50, 30, 6);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 500;
+    display: inline-block;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: goldenrod;
+    transform: scale(1.05);
+}
