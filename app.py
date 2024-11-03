@@ -3,6 +3,10 @@ import sqlite3
 
 app = Flask(__name__, static_folder='static')
 
+if __name__ == '__main__':
+    init_db()
+    insert_data()
+    app.run(debug=True, host='0.0.0.0', port=5000)
 
 def init_db():
     conn = sqlite3.connect('shopping_cart.db')
