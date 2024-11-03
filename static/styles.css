@@ -211,25 +211,57 @@ transform: scale(1.1);
     padding: 0 12px 0 0;
     color: bisque;
 }
+.product {
+    width: 300px; /* تحديد عرض ثابت */
+    margin: 10px; /* مسافة بين العناصر */
+    border: 1px solid #ddd; /* إضافة حدود */
+    border-radius: 5px; /* زوايا مستديرة */
+    overflow: hidden; /* إخفاء المحتوى الزائد */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+}
+
+.prd-img img {
+    width: 100%; /* جعل الصورة تملأ العرض بالكامل */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+.prd-description {
+    padding: 10px; /* إضافة حشو داخلي */
+}
+
+.prd-title {
+    font-size: 1.2em; /* تكبير حجم الخط */
+    margin-bottom: 10px; /* مسافة أسفل العنوان */
+}
+
+.description {
+    font-size: 0.9em; /* تصغير حجم الخط */
+    color: #555; /* تغيير لون النص */
+}
+
+.quantity {
+    font-size: 0.9em; /* تصغير حجم الخط */
+    color: #555; /* تغيير لون النص */
+    margin-bottom: 10px; /* مسافة أسفل النص */
+}
 
 .cart-form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* جعل العناصر بجانب بعضها البعض */
+    align-items: center; /* محاذاة العناصر عموديًا */
 }
 
 .quantity-input {
-    width: 50px;
-    padding: 5px;
-    margin-right: 10px;
-    border: 2px solid darkgoldenrod;
-    border-radius: 5px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 50px; /* تحديد عرض ثابت */
+    padding: 5px; /* إضافة حشو داخلي */
+    margin-right: 10px; /* مسافة يمين الحقل */
+    border: 2px solid darkgoldenrod; /* حدود الحقل */
+    border-radius: 5px; /* زوايا مستديرة */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* تأثيرات ديناميكية */
 }
 
 .quantity-input:focus {
-    border-color: goldenrod;
-    box-shadow: 0 0 5px goldenrod;
+    border-color: goldenrod; /* تغيير لون الحدود عند التركيز */
+    box-shadow: 0 0 5px goldenrod; /* إضافة ظل عند التركيز */
 }
 
 .add-to-cart {
